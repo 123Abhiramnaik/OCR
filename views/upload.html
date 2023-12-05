@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/upload.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="boxes mainBox1">
+                <div class="box box1">Submit files for Process</div>
+                <div class="box box2">
+                    <h2>Drag and Drop Files Here</h2>
+                    <p>OR</p>
+                    <button onclick="document.getElementById('file').click()"><small>+</small>Upload</button>
+                </div>
+                <div class="box box3">
+                    <p>Supported files</p>
+                    <h5>DAE, OBJ, STL, 3DS, STEP</h5>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="imageBox">
+                    <img src="/img/image-upload.gif" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+        <div class="result">
+            <p id="result"></p>
+        </div>
+        <input type="file" name="file" id="file" hidden>
+    </div>
+    <script src="/js/upload.js"></script>
+</body>
+
+</html>

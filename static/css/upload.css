@@ -1,0 +1,127 @@
+.main {
+    width: 100%;
+}
+
+.container {
+    width: 60%;
+    margin: 10px auto;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+}
+
+.boxes {
+    width: 50%;
+    height: 100%;
+}
+
+.mainBox1 {
+    border: 3px dashed #cbd5e0;
+    background-color: #edf2f7;
+}
+
+.box {
+    height: 33%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box1 {
+    height: 20%;
+    font-size: 12px;
+    color: gray;
+}
+
+.box2 {
+    height: 50%;
+}
+
+.box3 {
+    height: 30%;
+}
+
+.imageBox img {
+    width: 100%;
+    height: 80%;
+}
+
+.box2 h2 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.box2 p {
+    margin: 5px;
+    font-size: 15px;
+}
+
+.box2 button {
+    margin-top: 10px;
+    height: 40px;
+    width: 150px;
+    border: none;
+    background: rgb(94, 94, 232);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 1px rgb(189, 187, 187);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.box2 button small {
+    background-color: white;
+    height: 18px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    width: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    align-items: center;
+    position: absolute;
+    left: 25px;
+}
+
+.box3 p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.box3 h5 {
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    color: gray;
+}
+
+@media screen and (max-width: 1080px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .imageBox {
+        display: none;
+    }
+
+    .mainBox1 {
+        width: 100%;
+    }
+    .container{
+        width: 90%;
+    }
+}
